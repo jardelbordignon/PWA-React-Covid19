@@ -1,9 +1,8 @@
 import React, { memo } from 'react'
 
-import { Grid, Skeleton } from '../../../components'
 import { Card as MCard } from '../../../components/Card'
 
-import { CardContentStyled, CardPanelContent, Item, Value, Label } from './style'
+import { CardContentStyled, Value, Label } from './style'
 
 function Card({ value, label, color }) {
 
