@@ -26,14 +26,14 @@ function Panel({ updateAt, onChange, data, country, getCovidData }) {
   const shareInfo = () => navigator.share({
     title: `Dados do Covid-19 - ${country}`,
     text: textCovid19,
-    url: 'https://covid19.netlify.app/'
+    url: 'https://jb-covid-pwa.netlify.app'
   })
 
   const copyInfo = () => navigator.clipboard.writeText(textCovid19)
 
   const renderShareButton = (
     <div>
-      <Button variant='container' color='primary' onClick={shareInfo}>
+      <Button variant='contained' color='primary' onClick={shareInfo}>
         Compartilhar
       </Button>
     </div>
